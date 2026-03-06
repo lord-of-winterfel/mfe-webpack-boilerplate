@@ -1,0 +1,23 @@
+{
+  "name": "luna-ui-mfe",
+  "private": true,
+  "description": "Luna UI - Micro frontend portal (shell + library + blog remotes)",
+  "workspaces": [
+    "shell",
+    "remote-library",
+    "remote-blog"
+  ],
+  "scripts": {
+    "start": "concurrently \"npm run start:shell\" \"npm run start:library\" \"npm run start:blog\"",
+    "start:shell": "npm run start --workspace=shell",
+    "start:library": "npm run start --workspace=remote-library",
+    "start:blog": "npm run start --workspace=remote-blog",
+    "build": "npm run build --workspaces --if-present",
+    "build:shell": "npm run build --workspace=shell",
+    "build:library": "npm run build --workspace=remote-library",
+    "build:blog": "npm run build --workspace=remote-blog"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}

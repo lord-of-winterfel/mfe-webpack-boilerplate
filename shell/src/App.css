@@ -1,0 +1,74 @@
+/* Luna UI Shell - uses mfe-react-component-library design tokens */
+.shell-layout {
+  min-height: 100vh;
+  background: var(--mfe-color-background, #f5f5f5);
+  font-family: var(--mfe-font-family);
+}
+
+.shell-nav {
+  background: var(--mfe-color-surface);
+  border-bottom: 1px solid var(--mfe-color-border);
+  padding: var(--mfe-spacing-md) var(--mfe-spacing-lg);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.shell-nav-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.shell-brand {
+  font-size: var(--mfe-font-size-lg);
+  font-weight: 600;
+  color: var(--mfe-color-primary);
+  text-decoration: none;
+}
+
+.shell-brand:hover {
+  color: var(--mfe-color-primary-hover);
+}
+
+.shell-links {
+  display: flex;
+  gap: var(--mfe-spacing-lg);
+}
+
+.shell-link {
+  color: var(--mfe-color-text);
+  text-decoration: none;
+  padding: var(--mfe-spacing-xs) var(--mfe-spacing-sm);
+  border-radius: var(--mfe-radius-md);
+  font-weight: 500;
+}
+
+.shell-link:hover {
+  color: var(--mfe-color-primary);
+  background: var(--mfe-color-surface);
+}
+
+.shell-link.active {
+  color: var(--mfe-color-on-primary);
+  background: var(--mfe-color-primary);
+}
+
+.shell-link.active:hover {
+  background: var(--mfe-color-primary-hover);
+}
+
+.shell-main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: var(--mfe-spacing-xl);
+}
+
+.shell-loading {
+  padding: var(--mfe-spacing-xxl);
+  text-align: center;
+  color: var(--mfe-color-text-muted);
+  font-size: var(--mfe-font-size-md);
+}

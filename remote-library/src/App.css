@@ -1,0 +1,39 @@
+.library-app {
+  font-family: var(--mfe-font-family);
+  color: var(--mfe-color-text);
+}
+
+.library-title {
+  color: var(--mfe-color-primary);
+  font-size: var(--mfe-font-size-xxl);
+  margin-bottom: var(--mfe-spacing-md);
+}
+
+.library-desc {
+  color: var(--mfe-color-text-muted);
+  font-size: var(--mfe-font-size-md);
+  margin-bottom: var(--mfe-spacing-xl);
+}
+
+.library-actions {
+  margin-bottom: var(--mfe-spacing-lg);
+}
+
+.library-btn {
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: var(--mfe-font-size-sm);
+}
+
+.library-btn:hover {
+  opacity: 0.9;
+}
+
+.library-message {
+  padding: var(--mfe-spacing-md);
+  border: 1px solid;
+  border-radius: var(--mfe-radius-md);
+  background: var(--mfe-color-surface);
+  font-size: var(--mfe-font-size-sm);
+}
